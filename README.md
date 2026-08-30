@@ -83,7 +83,7 @@ NOVA currently supports:
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Nova.git
+git clone https://github.com/saoud-mohamed/Nova.git
 cd Nova
 ```
 
