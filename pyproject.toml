@@ -1,0 +1,65 @@
+
+[build-system]
+requires = [
+    "setuptools>=68",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "nova-security"
+version = "6.0.0"
+description = "Nova Web Security Fuzzing Framework"
+readme = "README.md"
+requires-python = ">=3.10"
+
+authors = [
+    { name = "Nova Project" }
+]
+
+license = { text = "MIT" }
+
+keywords = [
+    "security",
+    "cybersecurity",
+    "fuzzing",
+    "web-security",
+    "pentesting",
+    "bug-bounty",
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Topic :: Security",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+]
+
+dependencies = [
+    "requests>=2.31.0",
+    "rich>=13.7.0",
+]
+
+
+[project.scripts]
+nova = "nova_cli:main"
+
+
+[project.urls]
+Homepage = "https://github.com/saoud-mohamed/Nova"
+Repository = "https://github.com/saoud-mohamed/Nova"
+Issues = "https://github.com/saoud-mohamed/Nova/issues"
+
+
+[tool.setuptools]
+include-package-data = true
+py-modules = ["nova_cli"]
+
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["nova*"]
+
