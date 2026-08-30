@@ -1,4 +1,0 @@
-normal
-unknown
-demo-command
-demo-error
